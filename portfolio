@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Khushi Dandekar Portfolio</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<style>
+
+body{
+  background:#0f172a;
+  color:white;
+  font-family:Arial, sans-serif;
+}
+
+/* NAVBAR */
+
+.navbar{
+  background:#020617;
+  padding:15px 0;
+}
+
+.navbar-brand{
+  font-size:28px;
+  font-weight:bold;
+  color:#facc15 !important;
+}
+
+/* HERO SECTION */
+
+.hero-left{
+  background:linear-gradient(45deg,#7c3aed,#2563eb);
+  padding:60px;
+  text-align:center;
+  min-height:500px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+
+.hero-left h1{
+  font-size:70px;
+  font-weight:bold;
+}
+
+.hero-left h2{
+  font-size:30px;
+  margin-top:10px;
+}
+
+.hero-left img{
+  width:230px;
+  height:230px;
+  object-fit:cover;
+  border-radius:20px;
+  margin-top:20px;
+  border:4px solid white;
+}
+
+/* ABOUT */
+
+.about-section{
+  padding:50px;
+}
+
+.about-section h3{
+  margin-bottom:20px;
+  font-size:35px;
+}
+
+.about-section p{
+  font-size:18px;
+  line-height:1.8;
+}
+
+/* BUTTONS */
+
+.btn-warning{
+  font-weight:bold;
+}
+
+.btn-light{
+  font-weight:bold;
+}
+
+/* SECTION */
+
+section{
+  padding:60px 0;
+}
+
+section h1{
+  margin-bottom:40px;
+  font-weight:bold;
+  text-align:center;
+}
+
+/* CARDS */
+
+.card-custom{
+  background:rgba(255,255,255,0.08);
+  border-radius:15px;
+  padding:20px;
+  margin-bottom:20px;
+  transition:0.3s;
+}
+
+.card-custom:hover{
+  transform:translateY(-5px);
+  background:rgba(255,255,255,0.12);
+}
+
+/* SKILLS */
+
+.progress{
+  height:20px;
+  border-radius:10px;
+}
+
+/* CERTIFICATES */
+
+.cert-card{
+  background:rgba(255,255,255,0.08);
+  border-radius:12px;
+  padding:10px;
+  height:280px;
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  transition:0.3s;
+}
+
+.cert-card:hover{
+  transform:scale(1.03);
+}
+
+.cert-card img{
+  width:100%;
+  height:200px;
+  object-fit:contain;
+  background:white;
+  border-radius:8px;
+  padding:5px;
+  cursor:pointer;
+}
+
+.cert-card p{
+  font-size:15px;
+  font-weight:bold;
+  margin-bottom:10px;
+}
+
+/* CONTACT */
+
+.contact-card{
+  max-width:600px;
+  margin:auto;
+}
+
+/* MODAL */
+
+.modal img{
+  width:100%;
+  border-radius:10px;
+}
+
+/* FOOTER */
+
+footer{
+  background:#020617;
+  text-align:center;
+  padding:20px;
+  margin-top:40px;
+  color:#94a3b8;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.hero-left h1{
+  font-size:45px;
+}
+
+.hero-left h2{
+  font-size:22px;
+}
+
+.hero-left{
+  min-height:auto;
+  padding:40px;
+}
+
+.about-section{
+  padding:30px;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+
+<nav class="navbar navbar-dark">
+  <div class="container">
+    <span class="navbar-brand">Khushi Dandekar</span>
+  </div>
+</nav>
+
+<!-- HERO + ABOUT -->
+
+<section class="container-fluid">
+  <div class="row">
+
+    <!-- LEFT -->
+
+    <div class="col-md-6 hero-left">
+
+      <h1>Hello</h1>
+
+      <h2>I'm Khushi</h2>
+
+      <!-- Replace with your image -->
+      <img src="C:\Users\Asus\Downloads\khushi_photo.jpeg" alt="Khushi Image">
+
+    </div>
+
+    <!-- RIGHT -->
+
+    <div class="col-md-6 d-flex align-items-center about-section">
+
+      <div>
+
+        <h3>About Me</h3>
+
+        <p>
+          I am Khushi Dandekar, a first-year Data Science student passionate about Artificial Intelligence, programming, and technology.
+          I enjoy learning new skills, building projects, and exploring innovative technologies.
+        </p>
+
+        <a href="#resume" class="btn btn-warning m-2">
+          Resume
+        </a>
+
+        <a href="#projects" class="btn btn-light m-2">
+          Projects
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- RESUME -->
+
+<section id="resume" class="container">
+
+  <h1>Resume</h1>
+
+  <!-- Replace with your resume PDF -->
+  <a href="C:\Users\Asus\Downloads\Khushi Dandekar resume.pdf" download class="btn btn-warning mb-4">
+    Download CV
+  </a>
+
+  <div class="row">
+
+    <!-- EDUCATION -->
+
+    <div class="col-md-6">
+
+      <h4 class="mb-4">Education</h4>
+
+      <div class="card-custom">
+
+        <p><b>MIT Academy of Engineering, Pune</b></p>
+
+        <p>B.Tech Data Science (1st Year)</p>
+
+      </div>
+
+      <div class="card-custom">
+
+        <p><b>Schooling</b></p>
+
+        <p>Agragami high school</p>
+
+      </div>
+
+    </div>
+
+    <!-- SKILLS -->
+
+    <div class="col-md-6">
+
+      <h4 class="mb-4">Skills</h4>
+
+      <p>HTML & CSS</p>
+      <div class="progress mb-3">
+        <div class="progress-bar bg-warning" style="width:85%"></div>
+      </div>
+
+      <p>Python</p>
+      <div class="progress mb-3">
+        <div class="progress-bar bg-warning" style="width:80%"></div>
+      </div>
+
+      <p>C Programming</p>
+      <div class="progress mb-3">
+        <div class="progress-bar bg-warning" style="width:70%"></div>
+      </div>
+
+      <p>Problem Solving</p>
+      <div class="progress mb-3">
+        <div class="progress-bar bg-warning" style="width:85%"></div>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- PROJECTS -->
+
+<section id="projects" class="container">
+
+  <h1>Projects</h1>
+
+  <div class="row">
+
+    <div class="col-md-6">
+
+      <div class="card-custom">
+
+        <h4>Portfolio Website</h4>
+
+        <p>
+          Personal portfolio website created using HTML, CSS, Bootstrap, and JavaScript.
+        </p>
+
+      </div>
+
+    </div>
+
+    <div class="col-md-6">
+
+      <div class="card-custom">
+
+        <h4>College Website</h4>
+
+        <p>
+          Responsive college website design project with modern UI.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CERTIFICATES -->
+
+<section id="certificates" class="container text-center">
+
+  <h1>Certificates</h1>
+
+  <div class="row mt-4">
+
+    <!-- CLAUDE -->
+
+    <div class="col-md-4 mb-4">
+
+      <div class="cert-card">
+
+        <p>Claude 101</p>
+
+        <embed src="C:\Users\Asus\Downloads\claude 101 certificate.pdf" onclick="openModal(this.src)">
+
+      </div>
+
+    </div>
+
+    <!-- FRAMEWORK -->
+
+    <div class="col-md-4 mb-4">
+
+      <div class="cert-card">
+
+        <p>AI Fluency: Framework & Foundations</p>
+
+        <img src="C:\Users\Asus\Downloads\ai fluency framework and foundation certificate.pdf" onclick="openModal(this.src)">
+
+      </div>
+
+    </div>
+
+    <!-- STUDENTS -->
+
+    <div class="col-md-4 mb-4">
+
+      <div class="cert-card">
+
+        <p>AI Fluency for Students</p>
+
+        <img src="C:\Users\Asus\Downloads\ai fluency for student certificate.pdf" onclick="openModal(this.src)">
+
+      </div>
+
+    </div>
+
+    <!-- NONPROFIT -->
+
+    <div class="col-md-4 mb-4">
+
+      <div class="cert-card">
+
+        <p>AI Fluency for Nonprofits</p>
+
+        <img src="C:\Users\Asus\Downloads\ai fluency and non profit certifiacte.pdf" onclick="openModal(this.src)">
+
+      </div>
+
+    </div>
+
+    <!-- PYTHON 1 -->
+
+    <div class="col-md-4 mb-4">
+
+      <div class="cert-card">
+
+        <p>Python Essentials 1</p>
+
+        <img src="C:\Users\Asus\Downloads\Python essential 1.pdf" onclick="openModal(this.src)">
+
+      </div>
+
+    </div>
+
+    <!-- PYTHON 2 -->
+
+    <div class="col-md-4 mb-4">
+
+      <div class="cert-card">
+
+        <p>Python Essentials 2</p>
+
+        <img src="C:\Users\Asus\Downloads\python essential 2.pdf" onclick="openModal(this.src)">
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- CONTACT -->
+
+<section class="container text-center">
+
+  <h1>Contact</h1>
+
+  <div class="card-custom contact-card">
+
+    <p><b>Name:</b> Khushi Dandekar</p>
+
+    <p><b>Email:</b> dandekarkhushi9@gmail.com</p>
+
+    <p><b>Phone:</b> +91 9970561554</p>
+
+    <p><b>Location:</b> Pune, Maharashtra</p>
+
+  </div>
+
+</section>
+
+<!-- MODAL -->
+
+<div class="modal fade" id="imgModal">
+
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+
+    <div class="modal-content bg-dark">
+
+      <div class="modal-body text-center">
+
+        <img id="modalImg">
+
+      </div>
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer>
+
+  © 2026 Khushi Dandekar | Portfolio Website
+
+</footer>
+
+<!-- BOOTSTRAP -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- MODAL SCRIPT -->
+
+<script>
+
+function openModal(src){
+
+  document.getElementById("modalImg").src = src;
+
+  new bootstrap.Modal(
+    document.getElementById('imgModal')
+  ).show();
+
+}
+
+</script>
+
+</body>
+</html>
